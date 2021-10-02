@@ -1,0 +1,11 @@
+@import './colors.scss';
+
+@mixin Vertical-Slider() {
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $Shadow-Color;
+  }
+}

@@ -1,0 +1,41 @@
+$Border-Radius: 12px;
+
+// Border definition for layouts.scss internal use
+@mixin Border() {
+  border-radius: $Border-Radius;
+  border: 3px black solid;
+}
+
+@mixin Loose-Padding() {
+  padding: 0.6rem 1rem;
+}
+
+// Loose layout
+@mixin Loose-Layout() {
+  @include Loose-Padding();
+
+  @include Border();
+}
+
+// Compact layout
+@mixin Compact-Layout() {
+  padding: 0.4rem 0.7rem;
+
+  @include Border();
+}
+
+$Body-Radius: 24px;
+
+@mixin Body-Border($width: 3px) {
+  border-radius: $Body-Radius;
+  border: $width black solid;
+}
+
+@mixin Absolute-Attach() {
+  position: absolute;
+
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}

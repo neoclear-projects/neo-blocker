@@ -1,0 +1,17 @@
+@import '../../styles/index';
+
+// Input style
+.room-input {
+  @include Loose-Layout;
+  @include Primary-Font;
+
+  outline: none;
+
+  color: $Foreground-Color;
+  background-color: $Background-Color;
+
+  &::selection {
+    background-color: $Foreground-Color;
+    color: $Background-Color;
+  }
+}

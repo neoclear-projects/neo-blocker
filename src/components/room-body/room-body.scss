@@ -1,0 +1,15 @@
+@import '../../styles';
+
+// #room-body {
+//   display: grid;
+// }
+
+.about-content {
+  @include Secondary-Font(20px);
+  // text-align: center;
+  padding: 0px 0px;
+}
+
+#about {
+  padding: 20px 50px;
+}

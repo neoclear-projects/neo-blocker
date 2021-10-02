@@ -1,0 +1,50 @@
+@import '../../styles/index';
+
+// Define button styles
+.room-button {
+  @include Loose-Layout;
+  @include Primary-Font;
+
+  user-select: none;
+
+  color: $Foreground-Color;
+  background-color: $Background-Color;
+
+  // Change foreground and background color on hover
+  &:hover {
+    background-color: $Shadow-Color;
+  }
+
+  // Change foreground and background color on pressed
+  &:active {
+    background-color: $Foreground-Color;
+    color: $Background-Color;
+  }
+}
+
+// Inverted style of button
+.room-button-inverted {
+  @include Loose-Layout;
+  @include Primary-Font;
+
+  user-select: none;
+
+  color: $Background-Color;
+  background-color: $Foreground-Color;
+
+  // Change foreground and background color on hover
+  &:hover {
+    background-color: $BlackShadow-Color;
+  }
+
+  // Change foreground and background color on pressed
+  &:active {
+    background-color: $Background-Color;
+    color: $Foreground-Color;
+  }
+}
+
+// Shadow style for button
+.room-button-shadow {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 32px 0 rgba(0, 0, 0, 0.19);
+}
